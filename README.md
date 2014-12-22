@@ -1,7 +1,7 @@
-angularjs-typescript
+angularjs-hoodie
 ====================
 
-This repository is planned as bootstrap for AngularJS projects
+This repository is planned as bootstrap for AngularJS + Hood.ie projects
 
 Installation
 ------------
