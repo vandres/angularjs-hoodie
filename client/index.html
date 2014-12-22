@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html xmlns:ng="http://angularjs.org/" ng-app="de.voan.todo">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+
+    <title>AngularJS + Hood.ie Bootstrap</title>
+
+    <link rel="icon" href="./assets/images/favicon.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="./assets/images/favicon.ico" type="image/x-icon">
+
+    <% styles.forEach( function ( file ) { %>
+    <link rel="stylesheet" type="text/css" href="<%= file %>" /><% }); %>
+</head>
+
+<body ng-cloak>
+
+<div class="main-wrapper" ng:view>
+</div>
+
+<% scripts.forEach( function ( file ) { %>
+<script type="text/javascript" src="<%= file %>"></script><% }); %>
+<script src="/_api/_files/hoodie.js"></script>
+</body>
+</html>
