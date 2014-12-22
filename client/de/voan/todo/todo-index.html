@@ -1,10 +1,11 @@
 <div class="de-voan-todo">
-    <h1>Einkaufsliste ({{todos.length}})</h1>
+    <h1>Einkaufsliste ({{todosCount}})</h1>
+    <h2>{{header}}</h2>
 
     <label>Neuer Eintrag: <input type="text" ng-model="newTodo" ng-keyup="$event.keyCode == 13 && add()"/></label>
 
     <ul>
-        <li ng-repeat="todo in todos track by todo.id">
+        <li ng-repeat="todo in todos track by todo.uuid">
             <span class="title" ng-class="{'done': todo.done}">{{todo.title}}</span>
             <span class="icon-check" ng-click="check(todo)">(/)</span>
             <span class="icon-delete" ng-click="remove(todo)">(X)</span>
